@@ -12,7 +12,7 @@ class CashRegister
   def add_item(name, cost, quantity = 1)
     cart = @cart
     i = 1
-    while i >= quantity
+    while quantity >= i
       cart = cart.push(name)
       i = i + 1
     end
